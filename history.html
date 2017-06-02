@@ -4,96 +4,104 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Waypoint Batch History</title>
+    <title>Batch runs history</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   </head>
   <body>
   
 
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-inverse">
   <div class="container-fluid">
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Waypoint batch runner</a></li>
-      <li><a href="#">Batch page</a></li>
-      <li><a href="#">History</a></li>
+    <div class="title text-left">
+	<h1>Reminder batch runs history</h1>
+	</div>
+	<ul class="nav navbar-nav">
+      <li><a href="index.html">Batch page</a></li>
+      <li><a href="history.html">History</a></li>
       <li><a href="#">Logs</a></li>
+	  <li><a href="#">My runs</a></li>
     </ul>
   </div>
-</nav>
-
-<div class="title text-center">
-<h2>Waypoint Batch History</h2>
-</div>
-	
-<br/>
-
-
+</nav>	
   
-<div class="btn-group col-md-4 col-md-offset-8" role="group" aria-label="...">
-	<button type="button" class="btn btn-default">STEST</button>
-	<button type="button" class="btn btn-default">ATEST</button>
-	<button type="button" class="btn btn-default">Change Set Test Main</button>
+    <div class="container-fluid">
+<div class="btn-group col-sm-3" role="group" aria-label="...">
+	<button type="button" class="btn btn-primary">STEST</button>
+	<button type="button" class="btn btn-primary">ATEST</button>
+	<button type="button" class="btn btn-primary">PRODUCTION TEST</button>
+	<!--<button type="button" class="btn btn-primary">CHANGE SET TEST MAIN</button>-->
 </div>
-  
-<br>
-
-<div id="Category1" class="title container-fluid">
-  <h3>Actuary Export Batch</h3>
 </div>
+  <br/>
 
-<br/>
-
-<form class="form-inline container-fluid">
-  <div class="form-group form-group-sm">
-    <label for="Param1">Parameter 1:</label>
-    <input type="text" class="form-control " id="Param1" placeholder="parameter 1">
+<div class="container-fluid">
+<form class="form-group form-group-default col-sm-2 ">
+  <div class="form-group">
+    <label for="exampleInputName1"><h4>Policy number:</h4></label>
+    <input type="text" class="form-control" id="exampleInputName1" placeholder="SP0000XXXXXX">
+	 </div>	 
+  <div class="form-group" >
+    <label for="exampleInputName2"><h4>First reminder date:</h4></label>
+    <input type="text" class="form-control " id="exampleInputName2" placeholder="yyyy-mm-dd (Date picker)" >
   </div>
-  <div class="form-group form-group-sm">
-    <label for="Param2">Parameter 2:</label>
-    <input type="text" class="form-control " id="Param1" placeholder="parameter 2">
-  </div>
-    <div class="form-group form-group-sm">
+    <!--<div class="form-group form-group-sm">
     <label for="Param3">Parameter 3:</label>
     <input type="text" class="form-control " id="Param1" placeholder="parameter 3">
-  </div>
-  <button type="submit" class="btn btn-success btn-sm">Run</button>
-</form>
-
-<br/>
-<div id="Category1" class="title container-fluid">
-  <h5>HINTS:</h5>
-</div>
-<div class="container-fluid">
+  </div>-->
+   
+      <div class="form-group" >
+	     <label for="exampleInputName2"><h4>Comments:</h4></label>
 	<pre>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec turpis nibh, venenatis nec pretium eget, posuere id augue. 
-Morbi ornare commodo tortor et gravida. In ultrices sapien fringilla, fermentum libero molestie, auctor eros. 
-Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In ut auctor nisl. 
-Quisque scelerisque ligula quis tortor tincidunt, non maximus quam pretium. Donec tincidunt eget purus molestie faucibus. 
+Morbi ornare commodo tortor et gravida. In ultrices sapien fringilla, fermentum libero molestie, auctor eros. <..>
 	</pre>
-</div>
-<br/>
-<div class="row container-fluid ">
+  </div>
+   <div class="form-group pull-left" >
+  <button type="submit" class="btn btn-success glyphicon glyphicon-play"></button>
+  <button type="submit" class="btn btn-danger glyphicon glyphicon-stop"></button>
+  </div>
+
+</form>
+
+
+<div class="container-fluid col-md-9 col-md-push-1">
+<div class="row">
 <strong>
-	<div class="col-md-2"> Environment</div>
-	<div class="col-md-1">Run by</div>
-	<div class="col-md-2">Parameter 1</div>
-	<div class="col-md-2">Parameter 2</div>
-	<div class="col-md-2">Parameter 3</div>
-	<div class="col-md-1">Status</div>
-	<div class="col-md-2">Timestamp</div>
+	<div class="col-md-2 text-muted ">Environment</div>
+	<div class="col-md-1 text-muted ">Run by</div>
+	<div class="col-md-2 text-muted ">Policy number</div>
+	<div class="col-md-2 text-muted ">First reminder date</div>
+	<div class="col-md-1 text-muted ">Status</div>
+	<div class="col-md-2 text-muted ">Timestamp</div>
 </strong>
 </div>
 <br/>
-<div class="row container-fluid">
-	<div class="col-md-2"> STEST</div>
+<div class="row">
+	<div class="col-md-2 ">STEST</div>
 	<div class="col-md-1">LEOVIK</div>
-	<div class="col-md-2">testparam</div>
-	<div class="col-md-2"></div>
-	<div class="col-md-2"></div>
-	<div class="col-md-1"><font color="green">Success</font></div>
+	<div class="col-md-2">SP0000917928</div>
+	<div class="col-md-2">2017-07-17</div>
+	<div class="col-md-1 text-success">Success</div>
 	<div class="col-md-2">2017-05-26 10:21</div>
 </div>
-	
+<div class="row">
+	<div class="col-md-2">ATEST</div>
+	<div class="col-md-1">LEOVIK</div>
+	<div class="col-md-2">SP0000915551</div>
+	<div class="col-md-2">2017-07-17</div>
+	<div class="col-md-1 text-danger">Failed</div>
+	<div class="col-md-2">2017-05-26 10:21</div>
+</div>
+<div class="row">
+	<div class="col-md-2">PRODUCTION TEST</div>
+	<div class="col-md-1">LEOVIK</div>
+	<div class="col-md-2">SP0000915551</div>
+	<div class="col-md-2">2017-07-17</div>
+	<div class="col-md-1 text-danger">Failed</div>
+	<div class="col-md-2">2017-05-26 10:21</div>
+</div>
+</div>
+  </div>
 
     <!--<button class="api-button btn btn-success">Send API Request</button>
     <pre class="response-place"></pre> -->
