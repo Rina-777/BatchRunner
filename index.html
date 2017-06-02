@@ -1,123 +1,141 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-	<title>Batches. GUI</title>
-	 <link rel="stylesheet" href="style.css">
-	 <link rel="stylesheet" href="main.css">
-	 <link rel="stylesheet" href="categories.css">
-	 <link rel="stylesheet" href="menu.css">
-</head>
-
-<body>
-<!-- Site navigation menu -->
-<div class="navbar">
-<ul class="navbar">
-  <li><a href="index.html">Waypoint batch runner</a>
-  <li><a href="batchXXX.html">Batch page</a>
-  <li><a href="history.html">History</a>
-  <li><a href="logs.html">Logs</a>
-</ul>
-</div>
-
-
-<!-- Main content -->
-
-<div class="title">
-<h1>Waypoint Batch Runner</h1>
-</div>
-
-<div id="container1">
-
-	<div class="filter">
-	<form>
-	  <input type="search" name="filter" value="filter">
-	  <input type="submit" value="Submit">
-	</form>
-	</div>
-
-	<div class="myruns">
-	<form>
-	  <input type="button" name="myruns" value="myruns">
-	</form>
-	</div>
-</div>
-
-<div id="container2">
-<div class="tab">
-  <button class="tablinks" onclick="openCategory(event, 'Category1')">All</button>
-  <button class="tablinks" onclick="openCategory(event, 'Category1')">Category1</button>
-  <button class="tablinks" onclick="openCategory(event, 'Category2')">Category2</button>
-  <button class="tablinks" onclick="openCategory(event, 'Category3')">Category3</button>
-  <button class="tablinks" onclick="openCategory(event, 'Category3')">+</button>
-</div>
-
-<div id="Category1" class="tabcontent">
-  <h3>Category1</h3>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Waypoint Batch Runner</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">	
+	
+  </head>
+  <body>
   
-  <table class="batchestable" style="width: 100%; height: 100%;" border="0">
-<tr>
-	<td><a href="history.html" class="batchhref">Batch name</a></td><td><form name="XXX" action="javascript:select();"><input id="" type="button" name="run" value="Run" /></form></td><td>Running...</td><td>Date</td>
-</tr>
-<tr>
-	<td><a href="history.html" class="batchhref">Batch name</a></td><td><form name="XXX" action="javascript:select();"><input id="" type="button" name="run" value="Run" /></form></td><td>Running...</td><td>Date</td>
-</tr>
-<tr>
-	<td>Batch name</td><td><form name="XXX" action="javascript:select();"><input id="" type="button" name="run" value="Run" /></form></td><td>Running...</td><td>Date</td>
-</tr>
-<tr>
-	<td>Batch name</td><td><form name="XXX" action="javascript:select();"><input id="" type="button" name="run" value="Run" /></form></td><td>Running...</td><td>Date</td>
-</tr>
-<tr>
-	<td>Batch name</td><td><form name="XXX" action="javascript:select();"><input id="" type="button" name="run" value="Run" /></form></td><td>Running...</td><td>Date</td>
-</tr>
-<tr>
-	<td>Batch name</td><td><form name="XXX" action="javascript:select();"><input id="" type="button" name="run" value="Run" /></form></td><td>Running...</td><td>Date</td>
-</tr><tr>
-	<td>Batch name</td><td><form name="XXX" action="javascript:select();"><input id="" type="button" name="run" value="Run" /></form></td><td>Running...</td><td>Date</td>
-</tr>
-<tr>
-	<td>Batch name</td><td><form name="XXX" action="javascript:select();"><input id="" type="button" name="run" value="Run" /></form></td><td>Running...</td><td>Date</td>
-</tr>
-<tr>
-	<td>Batch name</td><td><form name="XXX" action="javascript:select();"><input id="" type="button" name="run" value="Run" /></form></td><td>Running...</td><td>Date</td>
-</tr><tr>
-	<td>Batch name</td><td><form name="XXX" action="javascript:select();"><input id="" type="button" name="run" value="Run" /></form></td><td>Running...</td><td>Date</td>
-</tr>
-<tr>
-	<td>Batch name</td><td><form name="XXX" action="javascript:select();"><input id="" type="button" name="run" value="Run" /></form></td><td>Running...</td><td>Date</td>
-</tr>
-<tr>
-	<td>Batch name</td><td><form name="XXX" action="javascript:select();"><input id="" type="button" name="run" value="Run" /></form></td><td>Running...</td><td>Date</td>
-</tr>
-<tr>
-	<td>Batch name</td><td><form name="XXX" action="javascript:select();"><input id="" type="button" name="run" value="Run" /></form></td><td>Running...</td><td>Date</td>
-</tr>
-<tr>
-	<td>Batch name</td><td><form name="XXX" action="javascript:select();"><input id="" type="button" name="run" value="Run" /></form></td><td>Running...</td><td>Date</td>
-</tr>
-<tr>
-	<td>Batch name</td><td><form name="XXX" action="javascript:select();"><input id="" type="button" name="run" value="Run" /></form></td><td>Running...</td><td>Date</td>
-</tr><tr>
-	<td>Batch name</td><td><form name="XXX" action="javascript:select();"><input id="" type="button" name="run" value="Run" /></form></td><td>Running...</td><td>Date</td>
-</tr>
-<tr>
-	<td>Batch name</td><td><form name="XXX" action="javascript:select();"><input id="" type="button" name="run" value="Run" /></form></td><td>Running...</td><td>Date</td>
-</tr>
-<tr>
-	<td>Batch name</td><td><form name="XXX" action="javascript:select();"><input id="" type="button" name="run" value="Run" /></form></td><td>Running...</td><td>Date</td>
-</tr>
-</table>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="title text-left">
+	<h1>Waypoint Batch Runner</h1>
+	</div>
+	<ul class="nav navbar-nav">
+      <li><a href="#">Batch page</a></li>
+      <li><a href="history.html">History</a></li>
+      <li><a href="#">Logs</a></li>
+	  <li><a href="#">My runs</a></li>
+    </ul>
+  </div>
+</nav>
+<br/>
+
+
+<div class="container-fluid">
+  <div class="col-md-4">
+	<form class="form-inline">
+		<div class="form-group form-group-default">
+			<label for="exampleInputName2"><h4>Batch name</h4></label>
+			<input type="text" class="form-control" id="exampleInputName2" placeholder="part of batch name">
+		</div>
+		  <button type="button" class="btn btn-default">
+			<span class="glyphicon glyphicon-search"></span> Search
+		</button>
+		</form>  
 </div>
+<br/>
+<br/>
+<br/>
+<br/>
+
+ <!--<div class="col-md-2 col-md-offset-6">
+	<form>
+		<input type="button" name="myruns" class="api-button btn btn-default btn-default" value="My runs">
+	</form>
+  </div> 
+</div>-->
+
+
+<div class="container-fluid" role="tabpanel">
+
+<ul class="nav nav-tabs">
+  <li role="presentation" class="active "><a href="#" ata-toggle="tab" >All</a></li>
+  <li role="presentation" ><a href="#" ata-toggle="tab" >Claims</a></li>
+  <li role="presentation"><a href="#" ata-toggle="tab" >Policy</a></li>
+  <li role="presentation"><a href="#" ata-toggle="tab" >Accounting</a></li>
+  <li role="presentation"><a href="#" ata-toggle="tab" >+</a></li>
+</ul>
+
 </div>
 
+<br/>
 
 
 
+<div class=" row container-fluid">
+	<div class="col-md-3 text-muted"><a href="history.html" class="batchhref" ><label class="text-muted"><h4>First reminder</h4></label></a> </div>
+	<div class="col-md-3"><form name="XXX" action="javascript:select();"><h4><button class="api-button btn btn-primary btn-sm">Run</button></h4></form></div>
+	<div class="col-md-3 text-success"><label><h4>Success</h4></label></div>
+	<div class="col-md-3"><h4>2017-05-25 17:13</h4></div>
+</div>
+<!--
+<div class="row container-fluid">
+	<div class="col-md-10"> <pre class="response-place"></pre></div>
+</div>-->
 
+<div class=" row container-fluid">
+	<div class="col-md-3"><a href="history.html" class="batchhref" ><label class="text-muted"><h4>Second reminder</h4></label></a> </div>
+	<div class="col-md-3"><form name="XXX" action="javascript:select();"><h4><button class="api-button btn btn-primary btn-sm">Run</button></h4></form></div>
+	<div class="col-md-3 text-danger" ><label><h4>Failed</h4></label></div>
+	<div class="col-md-3"><h4>2017-05-25 17:20</h4></div>
+</div>
+<!--
+<div class="row container-fluid">
+	<div class="col-md-10"> <pre></pre></div>
+</div>-->
 
+<div class=" row container-fluid">
+	<div class="col-md-3"><a href="history.html" class="batchhref" ><label class="text-muted"><h4>Debt Collection reminder</h4></label></a> </div>
+	<div class="col-md-3"><form name="XXX" action="javascript:select();"><h4><button class="api-button btn btn-primary btn-sm">Run</button></h4></form></div>
+	<div class="col-md-3 text-primary"><label><h4>In progress</h4></label></div>
+	<div class="col-md-3"><h4></h4></div>
+</div>
 
+<!--
+ <div class="row container-fluid">
+	<div class="col-md-10"> <pre></pre></div>
+</div>-->
 
-</body>
+<div class=" row container-fluid">
+	<div class="col-md-3"><a href="history.html" class="batchhref" ><label class="text-muted"><h4>DC Export</h4></label></a> </div>
+	<div class="col-md-3"><form name="XXX" action="javascript:select();"><h4><button class="api-button btn btn-primary btn-sm">Run</button></h4></form></div>
+	<div class="col-md-3 text-muted"><label><h4>Idle</h4></label></div>
+	<div class="col-md-3"><h4></h4></div>
+</div>
 
+<!--
+ <div class="row container-fluid">
+	<div class="col-md-10"> <pre></pre></div>
+</div>-->
+	
+	
+	
+
+    <!--<button class="api-button btn btn-success">Send API Request</button>
+    <pre class="response-place"></pre> -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+ <script>
+  let apiRequest = jsonData =>  $.ajax({
+    url: "http://localhost:5000/api/run/ping/",
+    method: "GET",
+    data: jsonData
+  });
+  
+  
+  $(".api-button").on("click", () => {
+   $(".responsedate-place").text("value");
+   apiRequest({}).then((data) => {
+	//$(".response-place").text(JSON.stringify(data));
+	$(".response-place").text(data);
+   });
+  });
+ </script>
+  </body>
 </html>
